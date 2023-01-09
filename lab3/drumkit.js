@@ -26,48 +26,48 @@ document.addEventListener("keypress", function(event) {
 function makeSound(key) {
 
   switch (key) {
-    case "b":
+    case "1":
       var boom = new Audio('/lab3/sounds/boom.wav');
       boom.play();
       break;
 
-    case "c":
+    case "2":
       var clap = new Audio('/lab3/sounds/clap.wav');
       clap.play();
       break;
 
-    case "h":
+    case "3":
       var hihat = new Audio('/lab3/sounds/hihat.wav');
       hihat.play();
       break;
 
-    case "k":
+    case "4":
       var kick = new Audio('/lab3/sounds/kick.wav');
       kick.play();
       break;
 
-    case "o":
+    case "5":
       var openhat = new Audio('/lab3/sounds/openhat.wav');
       openhat.play();
       break;
 
-    case "r":
+    case "6":
       var ride = new Audio('/lab3/sounds/ride.wav');
       ride.play();
       break;
 
-    case "s":
+    case "7":
       var snare = new Audio('/lab3/sounds/snare.wav');
       snare.play();
       break;
 
-      case "t":
+      case "8":
         var tink = new Audio('/lab3/sounds/tink.wav');
         tink.play();
         break;
 
 
-    case "to":
+    case "9":
         var tom  = new Audio('/lab3/sounds/tom.wav');
         tom.play();
         break;
