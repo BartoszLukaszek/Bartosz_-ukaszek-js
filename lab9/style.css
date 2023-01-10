@@ -31,7 +31,6 @@ input::placeholder {
   font-size: 1.4rem;
   font-weight: 600;
 }
-/* ============ Global Styles =========== */
 .weather-container {
   width: 40rem;
   height: 45rem;
@@ -113,8 +112,6 @@ input::placeholder {
   font-size: 1.75rem;
   font-weight: 500;
 }
-
-/* Media Query */
 
 @media screen and (max-width: 420px) {
   .weather-container {
