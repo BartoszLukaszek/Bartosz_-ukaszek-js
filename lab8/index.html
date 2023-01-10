@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Kulki poruszające się losowo</title>
-  </head>
-  <body>
-    <canvas id="canvas" width="500" height="500"></canvas>
-    <br />
-    <label for="numBalls">Liczba kulek:</label>
-    <input type="number" id="numBalls" value="5" min="1" max="100">
-    <br />
-    <label for="yThreshold">Próg odległości (Y):</label>
-    <input type="number" id="yThreshold" value="100" min="1" max="500">
-    <br />
-    <button onclick="start()">Start</button>
-    <button onclick="reset()">Reset</button>
-    <script src="script.js"></script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    canvas {
+      background-color: brown;
+    }
+  </style>
+</head>
+<body>
+  <canvas></canvas>
+  <script src="script.js"></script>
 </html>
