@@ -1,36 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Slider</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-
-<body>
-    <section aria-label="Newest photos">
-        <div class="carousel" data-carousel>
-            <button class="carousel-button prev" data-carousel-button="prev">&#8678;</button>
-            <button class="carousel-button next" data-carousel-button="next">&#8680;</button>
-            <ul data-slides>
-                <li class="slide" data-active>
-                    <img src="https://i.picsum.photos/id/944/500/800.jpg?hmac=tUxFtNdheaeGNaCcmSLBBPu4ApoP_hysE6Mnfq1qYaE"
-                        alt="example alt">
-                </li>
-                <li class="slide">
-                    <img src="https://i.picsum.photos/id/808/500/800.jpg?hmac=voZEz3tkj_2ly2O-kFR6HolQu7zzm2hy6kJmNizdV-I"
-                        alt="example alt">
-                </li>
-                <li class="slide">
-                    <img src="https://i.picsum.photos/id/851/500/800.jpg?hmac=R2vWI008FlCADdV8S6cag07icZp4dnRmgKfw71SVM5Y"
-                        alt="example alt">
-                </li>
-            </ul>
-        </div>
-    </section>
-    <script src="main.js"></script>
-</body>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <i id="left" class="fa-solid fa-angle-left"></i>
+      <div class="carousel">
+        <img src="images/img-1.jpg" alt="img" draggable="false">
+        <img src="images/img-2.jpg" alt="img" draggable="false">
+        <img src="images/img-3.jpg" alt="img" draggable="false">
+        <img src="images/img-4.jpg" alt="img" draggable="false">
+        <img src="images/img-5.jpg" alt="img" draggable="false">
+        <img src="images/img-6.jpg" alt="img" draggable="false">
+        <img src="images/img-7.jpg" alt="img" draggable="false">
+        <img src="images/img-8.jpg" alt="img" draggable="false">
+        <img src="images/img-9.jpg" alt="img" draggable="false">
+      </div>
+      <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
+    
+  </body>
 </html>
