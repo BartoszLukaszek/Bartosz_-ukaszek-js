@@ -11,6 +11,16 @@ const months = ["January", "February", "March", "April", "May", "June", "July",
 const notes = JSON.parse(localStorage.getItem("notes") || "[]");
 let isUpdate = false, updateId;
 
+
+const noteColor = document.querySelector("#noteColor");
+noteColor.addEventListener("change", () => {
+    let color = noteColor.value;
+    document.querySelectorAll(".note").forEach(li => {
+      li.style.background = color;
+    });
+});
+
+
 addBox.addEventListener("click", () => {
     popupTitle.innerText = "Add a new Note";
     addBtn.innerText = "Add Note";
