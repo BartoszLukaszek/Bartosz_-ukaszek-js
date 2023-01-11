@@ -34,7 +34,7 @@ apiRequest.onreadystatechange = () => {
 			response.name +
 			" is " +
 			response.weather[0].main +
-			" at " + currentTime + " temperature:"+ temperatureCelsius + " C " ;
+			" at " + currentTime + " temperature:"+ temperatureCelsius + " ℃  " ;
 
 	}
 };
