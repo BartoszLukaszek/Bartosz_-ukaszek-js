@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+}
+.noteW{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    background-color: red;
+}
