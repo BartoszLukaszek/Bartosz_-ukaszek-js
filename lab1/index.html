@@ -7,15 +7,28 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="liczba1">
-    <input type="text" id="liczba2">
-    <input type="text" id="liczba3">
-    <input type="text" id="liczba4">
+    <form>
+        <label for="field1">Pole 1:</label>
+        <input type="text" id="field1" name="field1" placeholder="Podaj liczbę"><br><br>
+    
+        <label for="field2">Pole 2:</label>
+        <input type="text" id="field2" name="field2" placeholder="Podaj liczbę"><br><br>
+    
+        <label for="field3">Pole 3:</label>
+        <input type="text" id="field3" name="field3" placeholder="Podaj liczbę"><br><br>
+    
+        <label for="field4">Pole 4:</label>
+        <input type="text" id="field4" name="field4" placeholder="Podaj liczbę"><br><br>
+    
+        <input type="button" value="Przelicz" onclick="calculate()">
+      </form>
+    
+      <div id="result">
+    
+      </div>
+          
 
-    <button id="przelicz">Przelicz</button>
-    <script src="main.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        //console.log
-    </script>
+<script src="script.js"></script>
+
 </body>
 </html>
