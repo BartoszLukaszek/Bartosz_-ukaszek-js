@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Nagrywanie i odtwarzanie ścieżek dźwiękowych</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <title>Nagrywanie dźwięków</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="key">1</div>
-    <div class="key">2</div>
-    <div class="key">3</div>
-    <div class="key">4</div>
-    <button onclick="playTrack(track1)">Odtwórz ścieżkę 1</button>
-    <button onclick="playTrack(track2)">Odtwórz ścieżkę 2</button>
-    <button onclick="playTrack(track3)">Odtwórz ścieżkę 3</button>
-    <button onclick="playTrack(track4)">Odtwórz ścieżkę 4</button>
-    <script src="drumkit.js"></script>
+    <h1>Drumkit</h1>
+    <div class="drumkit">
+      <div data-key="65" class="key">
+        <kbd>A</kbd>
+        <span class="sound">kick</span>
+      </div>
+      <div data-key="83" class="key">
+        <kbd>S</kbd>
+        <span class="sound">snare</span>
+      </div>
+      <div data-key="68" class="key">
+        <kbd>D</kbd>
+        <span class="sound">hihat</span>
+      </div>
+        <div data-key="70" class="key">
+            <kbd>F</kbd>
+            <span class="sound">tom</span>
+    </div>
+    <div class="controls">
+      <button class="record">Nagraj</button>
+      <button class="stop">Zatrzymaj</button>
+      <button class="play">Odtwórz</button>
+      
+    </div>
+    <audio data-key="65" src="sounds/kick.wav"></audio>
+    <audio data-key="83" src="sounds/snare.wav"></audio>
+    <audio data-key="68" src="sounds/hihat.wav"></audio>
+    <audio data-key="70" src="sounds/tom.wav"></audio>
+    <script src="script.js"></script>
   </body>
 </html>
