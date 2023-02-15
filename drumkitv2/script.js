@@ -10,10 +10,11 @@ function playSound(e, track) {
   audio.play();
   key.classList.add('playing');
   if (recording) {
-    const currentTime = Date.now() - startTime;a
+    const currentTime = Date.now() - startTime;
     tracks[track].push({ time: currentTime, key: e.keyCode });
   }
 }
+
 function play() {
     tracks.forEach((track, i) => {
       let time = 0;
@@ -26,7 +27,29 @@ function play() {
     });
   }
 
+function removeTransition(e) {
+  if (e.propertyName !== 'transform') return;
+  this.classList.remove('playing');
+}
+
+function record() {
+  tracks.forEach(track => track.length = 0);
+  recording = true;
+  startTime = Date.now();
+}
+
+function stop() {
+  recording = false;
+}
+
+
+
+const keys = document.querySelectorAll('.key');
+keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 window.addEventListener('keydown', e => playSound(e, 0));
 window.addEventListener('keydown', e => playSound(e, 1));
 window.addEventListener('keydown', e => playSound(e, 2));
 window.addEventListener('keydown', e => playSound(e, 3));
+document.querySelector('.record').addEventListener('click', record);
+document.querySelector('.stop').addEventListener('click', stop);
+document.querySelector('.play').addEventListener('click', play);
